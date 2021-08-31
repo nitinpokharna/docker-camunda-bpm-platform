@@ -14,8 +14,8 @@
   <servers>
     <server>
       <id>camunda-bpm-nexus-ee</id>
-      <username>${env.USER}</username>
-      <password>${env.PASSWORD}</password>
+      <username>${USER}</username>
+      <password>${PASSWORD}</password>
     </server>
   </servers>
 </settings>
