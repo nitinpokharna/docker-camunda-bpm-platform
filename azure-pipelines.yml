@@ -17,13 +17,14 @@ steps:
     containerRegistry: 'nitinacr'
     repository: 'nitinpacr'
     command: 'build'
+    arguments:  --build-arg EE=true,DISTRO=${DISTRO},VERSION=7.8.1,USER=trial_nitin_pokharna_94_gmail_com,PASSWORD=b99295bd-9dc5-482a-9
     Dockerfile: '**/Dockerfile'
 - task: Docker@2
   inputs:
     containerRegistry: 'nitinacr'
     repository: 'nitinpacr'
     command: 'push'
-    arguments:  --build-arg EE=true --build-arg DISTRO=${DISTRO} --build-arg VERSION=7.8.1 --build-arg USER=trial_nitin_pokharna_94_gmail_com  --build-arg PASSWORD=b99295bd-9dc5-482a-9
+    arguments:  --build-arg EE=true,DISTRO=${DISTRO},VERSION=7.8.1,USER=trial_nitin_pokharna_94_gmail_com,PASSWORD=b99295bd-9dc5-482a-9
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
