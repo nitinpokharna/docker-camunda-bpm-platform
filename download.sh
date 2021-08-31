@@ -20,7 +20,7 @@ fi
 
 # Determine if SNAPSHOT repo and version should be used
 if [ ${SNAPSHOT} = "true" ]; then
-    REPO="${REPO}-snapshots"
+    REPO="${REPO}"
     ARTIFACT_VERSION="${VERSION}"
 fi
 
