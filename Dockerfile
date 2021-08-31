@@ -1,6 +1,6 @@
 FROM alpine:3.12 as builder
 
-ARG VERSION=7.8.0
+ARG VERSION=7.8.1
 ARG DISTRO=tomcat
 ARG SNAPSHOT=false
 
@@ -35,10 +35,10 @@ FROM alpine:3.12
 ARG VERSION=7.16.0
 
 ENV CAMUNDA_VERSION=${VERSION}
-ENV DB_DRIVER=org.postgresql.Driver
-ENV DB_URL=jdbc:postgresql://nitinkube.postgres.database.azure.com:5432/postgres?user=Nitin@nitinkube&password=Camunda123&sslmode=require
-ENV DB_USERNAME=Nitin@nitinkube
-ENV DB_PASSWORD=Camunda123
+ENV DB_DRIVER=
+ENV DB_URL=
+ENV DB_USERNAME=
+ENV DB_PASSWORD=
 ENV DB_CONN_MAXACTIVE=20
 ENV DB_CONN_MINIDLE=5
 ENV DB_CONN_MAXIDLE=20
