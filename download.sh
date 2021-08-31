@@ -5,7 +5,7 @@ if [ "${EE}" = "true" ]; then
     echo "Downloading Camunda ${VERSION} Enterprise Edition for ${DISTRO}"
     REPO="camunda-bpm-snapshots"
     NEXUS_GROUP="private"
-    ARTIFACT="camunda-bpm-tomcat${DISTRO}"
+    ARTIFACT="camunda-bpm${DISTRO}"
     if [ "${DISTRO}" = "run" ]; then
       ARTIFACT="camunda-bpm-run-ee"
     fi
