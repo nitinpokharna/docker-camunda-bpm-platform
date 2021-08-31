@@ -59,7 +59,7 @@ fi
 
 mvn dependency:get -B --global-settings /tmp/settings.xml \
     $PROXY \
-    -DremoteRepositories="camunda-nexus::::https://app.camunda.com/nexus/content/repository/camunda-bpm/" \
+    -DremoteRepositories="camunda-nexus::::https://app.camunda.com/nexus/repository/camunda-bpm/" \
     -DgroupId="${ARTIFACT_GROUP}" -DartifactId="${ARTIFACT}" \
     -Dversion="${ARTIFACT_VERSION}" -Dpackaging="tar.gz" -Dtransitive=false
 cambpm_distro_file=$(find /m2-repository -name "${ARTIFACT}-${ARTIFACT_VERSION}.tar.gz" -print | head -n 1)
