@@ -14,8 +14,8 @@
   <servers>
     <server>
       <id>camunda-bpm-nexus-ee</id>
-      <username>${USER}</username>
-      <password>${PASSWORD}</password>
+      <username>trial_nitin_pokharna_94_gmail_com</username>
+      <password>b99295bd-9dc5-482a-9</password>
     </server>
   </servers>
 </settings>
