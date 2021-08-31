@@ -1,6 +1,6 @@
 FROM alpine:3.12 as builder
 
-ARG VERSION=7.8.10
+ARG VERSION=7.8.1
 ARG DISTRO=tomcat
 ARG SNAPSHOT=false
 
