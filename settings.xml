@@ -5,7 +5,7 @@
   <localRepository>m2-repository</localRepository>
   <servers>
     <server>
-      <id>camunda-nexus</id>
+      <id>camunda-bpm-nexus-ee</id>
       <username>${env.USER}</username>
       <password>${env.PASSWORD}</password>
     </server>
