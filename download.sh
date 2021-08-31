@@ -3,7 +3,7 @@
 # Determine nexus URL parameters
 if [ "${EE}" = "true" ]; then
     echo "Downloading Camunda ${VERSION} Enterprise Edition for ${DISTRO}"
-    REPO="camunda-bpm-ee"
+    REPO="camunda-bpm-snapshots"
     NEXUS_GROUP="private"
     ARTIFACT="camunda-bpm-ee-${DISTRO}"
     if [ "${DISTRO}" = "run" ]; then
@@ -59,7 +59,7 @@ fi
 
 mvn dependency:get -B --global-settings /tmp/settings.xml \
     $PROXY \
-    -DremoteRepositories="camunda-nexus::::https://app.camunda.com/nexus/content/repositories/${REPO}/" \
+    -DremoteRepositories="camunda-nexus::::https://app.camunda.com/nexus/content/repository/${REPO}/" \
     -DgroupId="${ARTIFACT_GROUP}" -DartifactId="${ARTIFACT}" \
     -Dversion="${ARTIFACT_VERSION}" -Dpackaging="tar.gz" -Dtransitive=false
 cambpm_distro_file=$(find /m2-repository -name "${ARTIFACT}-${ARTIFACT_VERSION}.tar.gz" -print | head -n 1)
