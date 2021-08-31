@@ -24,9 +24,3 @@ steps:
     containerRegistry: 'nitinacr'
     repository: 'nitinpacr'
     command: 'push'
-    arguments:  --build-arg EE=true,DISTRO=${DISTRO},VERSION=7.8.1,USER=trial_nitin_pokharna_94_gmail_com,PASSWORD=b99295bd-9dc5-482a-9
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
