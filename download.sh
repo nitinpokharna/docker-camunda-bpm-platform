@@ -5,7 +5,7 @@ if [ "${EE}" = "true" ]; then
     echo "Downloading Camunda ${VERSION} Enterprise Edition for ${DISTRO}"
     REPO="camunda-bpm-snapshots"
     NEXUS_GROUP="private"
-    ARTIFACT="camunda-bpm${DISTRO}"
+    ARTIFACT="camunda-bpm-tomcat${DISTRO}"
     if [ "${DISTRO}" = "run" ]; then
       ARTIFACT="camunda-bpm-run-ee"
     fi
@@ -21,7 +21,7 @@ fi
 # Determine if SNAPSHOT repo and version should be used
 if [ ${SNAPSHOT} = "true" ]; then
     REPO="${REPO}-snapshots"
-    ARTIFACT_VERSION="${VERSION}-SNAPSHOT"
+    ARTIFACT_VERSION="${VERSION}"
 fi
 
 # Determine artifact group, all wildfly version have the same group
